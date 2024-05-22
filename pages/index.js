@@ -3,6 +3,13 @@ import VisibilityIcon from '@mui/icons-material/Visibility';
 import VisibilityOffIcon from '@mui/icons-material/VisibilityOff'; import Link from 'next/link'
 import React, { useState, useEffect } from 'react'
 
+export const metadata = {
+    title: 'Iniciar sesión',
+    description: 'Iniciar sesión en la aplicación',
+    keywords: 'Iniciar sesión, login, autenticación, autenticar, usuario, contraseña, email, correo electrónico',
+    manifest: "/manifest.json",    
+}
+
 export default function index() {
     const [showPassword, setShowPassword] = useState(false)
 
