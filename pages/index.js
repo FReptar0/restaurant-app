@@ -6,8 +6,6 @@ import React, { useState, useEffect } from 'react'
 export const metadata = {
     title: 'Iniciar sesión',
     description: 'Iniciar sesión en la aplicación',
-    keywords: 'Iniciar sesión, login, autenticación, autenticar, usuario, contraseña, email, correo electrónico',
-    manifest: "/manifest.json",    
 }
 
 export default function index() {
