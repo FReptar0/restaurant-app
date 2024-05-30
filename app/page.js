@@ -1,12 +1,9 @@
+"use client";
 import { Container, Box, TextField, Button, Typography, InputAdornment } from '@mui/material'
 import VisibilityIcon from '@mui/icons-material/Visibility';
-import VisibilityOffIcon from '@mui/icons-material/VisibilityOff'; import Link from 'next/link'
-import React, { useState, useEffect } from 'react'
-
-export const metadata = {
-    title: 'Iniciar sesión',
-    description: 'Iniciar sesión en la aplicación',
-}
+import VisibilityOffIcon from '@mui/icons-material/VisibilityOff'; 
+import Link from 'next/link'
+import React, { useState } from 'react'
 
 export default function index() {
     const [showPassword, setShowPassword] = useState(false)
@@ -83,10 +80,10 @@ export default function index() {
                                 Iniciar sesión
                             </Button>
 
-                            <Typography variant="body2"
+                            <Typography variant="subtitle2"
                                 style={{ textAlign: 'center' }}
                             >
-                                ¿No tienes cuenta? <Link href={'#'}
+                                ¿No tienes cuenta? <Link href={'/signup'}
                                     style={{ textDecoration: 'none', color: '#42a5f5' }}
                                 >Regístrate</Link>
                             </Typography>
