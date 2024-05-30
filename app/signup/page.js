@@ -17,7 +17,7 @@ export default function index() {
                         flexDirection: 'column',
                         alignItems: 'center',
                         justifyContent: 'center',
-                        height: '100vh'
+                        height: '100vh',
                     }}
                 >
                     <form>
@@ -29,18 +29,44 @@ export default function index() {
                                 bgcolor: 'rgba(255, 255, 255, 0.1)',
                                 padding: 5,
                                 borderRadius: 2,
+                                width: '400px',
                             }}
                         >
                             <Typography variant="h4"
                                 style={{ textAlign: 'center' }}
                             >
-                                Iniciar sesión
+                                Registrarse
                             </Typography>
+
+                            <TextField
+                                id="name"
+                                label="Nombre"
+                                variant="filled"
+                                name='name'
+                                type='text'
+                            />
+
+                            <TextField
+                                id="lastname"
+                                label="Apellido(s)"
+                                variant="filled"
+                                name='lastname'
+                                type='text'
+                            />
+
                             <TextField
                                 id="user"
                                 label="Correo electrónico"
                                 variant="filled"
                                 name='user'
+                                type='text'
+                            />
+
+                            <TextField
+                                id="phone"
+                                label="Teléfono"
+                                variant="filled"
+                                name='phone'
                                 type='text'
                             />
 
@@ -83,9 +109,9 @@ export default function index() {
                             <Typography variant="subtitle2"
                                 style={{ textAlign: 'center' }}
                             >
-                                ¿No tienes cuenta? <Link href={'/signup'}
+                                ¿Ya eres un usuario? <Link href={'/'}
                                     style={{ textDecoration: 'none', color: '#42a5f5' }}
-                                >Regístrate</Link>
+                                >Inicia sesión</Link>
                             </Typography>
                         </Box>
                     </form>
